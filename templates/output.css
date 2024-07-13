@@ -714,16 +714,28 @@ video {
   width: 100%;
 }
 
-.w-\[50rem\] {
-  width: 50rem;
+.w-2\/3 {
+  width: 66.666667%;
 }
 
-.w-\[35rem\] {
-  width: 35rem;
+.w-2\/12 {
+  width: 16.666667%;
 }
 
-.w-\[45rem\] {
-  width: 45rem;
+.w-4\/5 {
+  width: 80%;
+}
+
+.w-5\/6 {
+  width: 83.333333%;
+}
+
+.w-5\/12 {
+  width: 41.666667%;
+}
+
+.w-1\/2 {
+  width: 50%;
 }
 
 .flex-shrink-0 {
@@ -967,24 +979,24 @@ video {
   padding-top: 2rem;
 }
 
-.pr-8 {
-  padding-right: 2rem;
-}
-
-.pr-20 {
-  padding-right: 5rem;
+.pt-10 {
+  padding-top: 2.5rem;
 }
 
 .text-center {
   text-align: center;
 }
 
-.font-rubik {
-  font-family: Rubik Mono One;
+.indent-10 {
+  text-indent: 2.5rem;
 }
 
 .font-roboto {
   font-family: Roboto Mono;
+}
+
+.font-rubik {
+  font-family: Rubik Mono One;
 }
 
 .text-3xl {
@@ -1370,8 +1382,36 @@ video {
     padding-right: 2rem;
   }
 
+  .sm\:pl-2 {
+    padding-left: 0.5rem;
+  }
+
+  .sm\:pr-2 {
+    padding-right: 0.5rem;
+  }
+
+  .sm\:pl-4 {
+    padding-left: 1rem;
+  }
+
+  .sm\:pr-4 {
+    padding-right: 1rem;
+  }
+
+  .sm\:text-left {
+    text-align: left;
+  }
+
   .sm\:text-center {
     text-align: center;
+  }
+
+  .sm\:text-justify {
+    text-align: justify;
+  }
+
+  .sm\:indent-10 {
+    text-indent: 2.5rem;
   }
 
   .sm\:text-3xl {
@@ -1382,5 +1422,15 @@ video {
   .sm\:text-lg {
     font-size: 1.125rem;
     line-height: 1.75rem;
+  }
+
+  .sm\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+
+  .sm\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 }
