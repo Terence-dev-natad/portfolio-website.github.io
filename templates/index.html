@@ -9,19 +9,27 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="output.css">
     <link rel="icon" href="../templates/images/favicon.jpg" type="image/x-icon">
+    <script src="script.js" defer></script>
     <title></natadportfolio></title>
 </head>
 <body  class="bg-[rgb(30,30,30)] text-[rgb(255,255,255)]">
     <main id="home" class="h-screen">
-        <header class="flex justify-evenly items-center place-items-center  p-3 h-24 fixed top-0 right-0 left-0 z-[100] bg-[rgb(30,30,30)] bg-opacity-15 sm:flex sm:justify-start md:justify-start">
+        <header class="flex justify-evenly items-center p-3 h-24 fixed top-0 right-0 left-0 z-[100] bg-[rgb(30,30,30)] bg-opacity-15 sm:justify-between md:justify-between">
             <img class="w-28 h-8" src="../templates/images/natad.png" alt="">
-            <nav class="text-[rgb(255,255,255)] list-none flex gap-10 font-bold text-xl md:hidden">
-                <a class="pl-1 pr-1 hover:text-amber-500 relative after:content-[''] after:absolute after:bg-amber-500 after:h-[3px] after:w-0 after:left-0 after:bottom-[-2px] after:transition-all after:duration-300 hover:after:w-full" href="#home">Home</a>
-                <a class="pl-1 pr-1 hover:text-[rgb(50,205,50)] relative after:content-[''] after:absolute after:bg-[rgb(50,205,50)] after:h-[3px] after:w-0 after:left-0 after:bottom-[-2px] after:transition-all after:duration-300 hover:after:w-full" href="#about">About</a>
-                <a class="pl-1 pr-1 hover:text-[rgb(160,160,255)] relative after:content-[''] after:absolute after:bg-[rgb(160,160,255)] after:h-[3px] after:w-0 after:left-0 after:bottom-[-2px] after:transition-all after:duration-300 hover:after:w-full" href="#service">Services</a>
-                <a class="pl-1 pr-1 hover:text-[rgb(0,173,181)] relative after:content-[''] after:absolute after:bg-[rgb(0,173,181)] after:h-[3px] after:w-0 after:left-0 after:bottom-[-2px] after:transition-all after:duration-300 hover:after:w-full" href="#projects">Projects</a>
+            <nav class="nav-links text-[rgb(255,255,255)] list-none flex gap-10 font-bold text-xl md:hidden">
+              <a class="pl-1 pr-1 hover:text-amber-500 relative after:content-[''] after:absolute after:bg-amber-500 after:h-[3px] after:w-0 after:left-0 after:bottom-[-2px] after:transition-all after:duration-300 hover:after:w-full" href="#home">Home</a>
+              <a class="pl-1 pr-1 hover:text-[rgb(50,205,50)] relative after:content-[''] after:absolute after:bg-[rgb(50,205,50)] after:h-[3px] after:w-0 after:left-0 after:bottom-[-2px] after:transition-all after:duration-300 hover:after:w-full" href="#about">About</a>
+              <a class="pl-1 pr-1 hover:text-[rgb(160,160,255)] relative after:content-[''] after:absolute after:bg-[rgb(160,160,255)] after:h-[3px] after:w-0 after:left-0 after:bottom-[-2px] after:transition-all after:duration-300 hover:after:w-full" href="#service">Services</a>
+              <a class="pl-1 pr-1 hover:text-[rgb(0,173,181)] relative after:content-[''] after:absolute after:bg-[rgb(0,173,181)] after:h-[3px] after:w-0 after:left-0 after:bottom-[-2px] after:transition-all after:duration-300 hover:after:w-full" href="#projects">Projects</a>
             </nav>
-        </header>
+            <button class="hidden md:block">
+              <svg width="40" height="40" viewBox="0 0 100 80" fill="white" xmlns="http://www.w3.org/2000/svg">
+                <rect width="100" height="10"></rect>
+                <rect y="30" width="100" height="10"></rect>
+                <rect y="60" width="100" height="10"></rect>
+              </svg>
+            </button>
+          </header>
         <div class="grid grid-cols-2 pt-40 place-items-center lg:grid-cols-1 sm:mt-32 lg:mt-32 md:mt-32">
             <div class="pl-16  md:text-center sm:pl-0 lg:pl-0 md:pl-0 sm:ml-4 sm:mr-4">
                 <h1 class="font-rubik text-4xl w-[full] md:text-center lg:text-center sm:text-2xl">Hi, My Name is Terence I <span class="text-[rgb(0,173,181)]">design</span> and <span class="text-amber-500">build </span>things on web.</h1>
@@ -42,8 +50,7 @@
         </div>
 
        <div class="flex justify-evenly mr-32 ml-32 sm:m-0">
-        <div class="grid grid-cols-2 place-items-center items-center justify-center mt-20 md:grid-cols-1 sm:grid-cols-1 gap-10 lg:grid-cols-1 xl:pl-8 xl:pr-8 lg:pl-8 lg:pr-8">
-
+        <div class="grid grid-cols-2 place-items-center items-center justify-center mt-20 md:grid-cols-1 sm:grid-cols-1 gap-10 lg:grid-cols-1">
             <div class="text-sm lg:text-center sm:pl-4 sm:pr-4 sm:text-justify font-roboto">
                 <p class="w-full leading-6 sm:indent-10">
                     Hi Everyone! My name is Terence Dave Natad,  a BSIT student of WMSU based in the Philippines. 
