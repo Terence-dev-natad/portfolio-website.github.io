@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Rubik+Mono+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="output.css">
     <link rel="icon" href="../templates/images/favicon.jpg" type="image/x-icon">
@@ -10,43 +13,42 @@
 </head>
 <body  class="bg-[rgb(30,30,30)] text-[rgb(255,255,255)]">
     <main id="home" class="h-screen">
-        <header class="flex justify-evenly items-center  p-3 h-24 fixed top-0 right-0 left-0 z-[100] bg-transparent bg-opacity-100 sm:flex sm:justify-start md:justify-start">
+        <header class="flex justify-evenly items-center place-items-center  p-3 h-24 fixed top-0 right-0 left-0 z-[100] bg-[rgb(30,30,30)] bg-opacity-15 sm:flex sm:justify-start md:justify-start">
             <img class="w-28 h-8" src="../templates/images/natad.png" alt="">
             <nav class="text-[rgb(255,255,255)] list-none flex gap-10 font-bold text-xl md:hidden">
-                <a class="pt-1 pb-1 pl-4 pr-4 hover:text-amber-500" href="#home">Home</a>
-                <a class="pt-1 pb-1 pl-4 pr-4 hover:text-[rgb(50,205,50)]" href="#about">About</a>
-                <a class="pt-1 pb-1 pl-4 pr-4 hover:text-[rgb(160,160,255)]" href="#service">Services</a>
-                <a class="pt-1 pb-1 pl-4 pr-4 hover:text-[rgb(0,173,181)]" href="#projects">Projects</a>
+                <a class="pl-1 pr-1 hover:text-amber-500 relative after:content-[''] after:absolute after:bg-amber-500 after:h-[3px] after:w-0 after:left-0 after:bottom-[-2px] after:transition-all after:duration-300 hover:after:w-full" href="#home">Home</a>
+                <a class="pl-1 pr-1 hover:text-[rgb(50,205,50)] relative after:content-[''] after:absolute after:bg-[rgb(50,205,50)] after:h-[3px] after:w-0 after:left-0 after:bottom-[-2px] after:transition-all after:duration-300 hover:after:w-full" href="#about">About</a>
+                <a class="pl-1 pr-1 hover:text-[rgb(160,160,255)] relative after:content-[''] after:absolute after:bg-[rgb(160,160,255)] after:h-[3px] after:w-0 after:left-0 after:bottom-[-2px] after:transition-all after:duration-300 hover:after:w-full" href="#service">Services</a>
+                <a class="pl-1 pr-1 hover:text-[rgb(0,173,181)] relative after:content-[''] after:absolute after:bg-[rgb(0,173,181)] after:h-[3px] after:w-0 after:left-0 after:bottom-[-2px] after:transition-all after:duration-300 hover:after:w-full" href="#projects">Projects</a>
             </nav>
         </header>
-        <div class="grid grid-cols-2 pt-32 place-items-center lg:grid-cols-1 sm:mt-32 lg:mt-32 md:mt-32">
+        <div class="grid grid-cols-2 pt-40 place-items-center lg:grid-cols-1 sm:mt-32 lg:mt-32 md:mt-32">
             <div class="pl-16 w-3/4 md:text-center sm:pl-0">
-                <h1 class="font-mono text-4xl w-[full] font-extrabold md:text-center lg:text-center ">Hi, My Name is Terence I <span class="text-[rgb(0,173,181)]">design</span> and <span class="text-amber-500">build </span>things on web.</h1>
-                <p class="mt-5 md:text-center lg:text-center">
+                <h1 class="font-rubik text-4xl w-[full] md:text-center lg:text-center ">Hi, My Name is Terence I <span class="text-[rgb(0,173,181)]">design</span> and <span class="text-amber-500">build </span>things on web.</h1>
+                <p class="mt-5 font-roboto md:text-center lg:text-center">
                      I’m a Front-end Developer and UI/UX designer based in Philippines.
                 </p>
             </div>
             <div>
-                <img class="md:hidden lg:hidden sm:hidden" src="../templates/images/man.png" alt="">
+                <img class="md:hidden lg:hidden sm:hidden " src="../templates/images/man-holding-cup.png" alt="">
             </div>
-           
         </div>
     </main>
 
     <section id="about" class="pb-28 bg-[rgb(38,37,37)]">
     <div class="pt-28">
         <div class="text-center">
-            <h2 class="font-bold text-3xl ">About <span class="text-amber-500">Me</span></h2>
+            <h2 class="font-bold text-3xl font-rubik ">About <span class="text-amber-500">Me</span></h2>
         </div>
 
        <div class="flex justify-evenly mr-32 ml-32 sm:m-0">
-        <div class="grid grid-cols-2 place-items-center items-center justify-center mt-20 md:grid-cols-1 sm:grid-cols-1 gap-10 lg:grid-cols-1">
-            <div class="text-sm sm:text-center lg:text-center sm:pl-8 sm:pr-8">
+        <div class="grid grid-cols-2 place-items-center items-center justify-center mt-20 md:grid-cols-1 sm:grid-cols-1 gap-10 lg:grid-cols-1 xl:pl-8 xl:pr-8 lg:pl-8 lg:pr-8">
+            <div class="text-sm sm:text-center lg:text-center sm:pl-8 sm:pr-8 font-roboto">
                 <p class="w-full leading-6">
                     Hi Everyone! My name is Terence Dave Natad,  a BSIT student of WMSU based in the Philippines. 
                     I am currently focusing in HTML, CSS and Javascript as my core programming language.
                 </p>
-                <p class="mt-12 w-full leading-6">
+                <p class="mt-5 w-full leading-6">
                     As a self-taught front-end developer and UI/UX designer, I've become proficient in HTML, CSS, JavaScript, and design tools such as Figma. 
                     I learnt how to develop dynamic and visually appealing web sites using online lessons and hands-on projects. This path has provided me with a unique view on the junction of design and development, 
                     allowing me to create seamless and user-friendly experiences. Balancing two responsibilities has been difficult but also gratifying, motivating my desire for continual learning and creativity.
@@ -55,28 +57,28 @@
             <div class="">
                 <img class="h-[20rem]" src="../templates/images/laptop.png" alt="">
             </div>
-            <div class="grid grid-cols-3 gap-4 sm:flex-col  xl:flex flex-shrink-0">
-                <div class="bg-[rgb(24,23,23)] pl-10 pr-10 pb-10 text-center">
-                    <h5 class="font-semibold text-xl mt-5">Experience</h5>
-                    <h4 class="font-extrabold text-4xl mt-4">+ 0</h4>
-                </div>
-                <div class="bg-[rgb(24,23,23)] pl-10 pr-10 pb-10 text-center">
-                    <h5 class="font-semibold text-xl mt-5">Companies</h5>
-                    <h4 class="font-extrabold text-4xl mt-4">+ 0</h4>
-                </div>
-                <div class="bg-[rgb(24,23,23)] pl-10 pr-10 pb-10 text-center ">
-                    <h5 class="font-semibold text-xl mt-5">Projects</h5>
-                    <h4 class="font-extrabold text-4xl mt-4">+ 0</h4>
+                <div class="grid grid-cols-3 gap-4 sm:flex-col  xl:flex flex-shrink-0 font-roboto">
+                    <div class="bg-[rgb(24,23,23)] pl-10 pr-10 pb-10 text-center">
+                        <h5 class="font-semibold text-xl mt-5">Experience</h5>
+                        <h4 class="font-extrabold text-4xl mt-4">+ 0</h4>
+                    </div>
+                    <div class="bg-[rgb(24,23,23)] pl-10 pr-10 pb-10 text-center">
+                        <h5 class="font-semibold text-xl mt-5">Companies</h5>
+                        <h4 class="font-extrabold text-4xl mt-4">+ 0</h4>
+                    </div>
+                    <div class="bg-[rgb(24,23,23)] pl-10 pr-10 pb-10 text-center ">
+                        <h5 class="font-semibold text-xl mt-5">Projects</h5>
+                        <h4 class="font-extrabold text-4xl mt-4">+ 0</h4>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
     </div>
  </section>
 
     <section class="h-screen">
         <div class="pt-32 text-center">
-            <h1 class="font-bold text-3xl">Featured <span class="text-[rgb(50,205,50)]">Skills</span></h1>
+            <h1 class="font-bold text-3xl font-rubik">Featured <span class="text-[rgb(50,205,50)]">Skills</span></h1>
         </div>
 
         <div class="flex flex-wrap justify-evenly pt-8 sm:grid-cols-1 gap-12">
@@ -85,37 +87,37 @@
                     <h2 class="text-lg font-semibold">FRONT-END</h2>
                 </div>
                 
-                <div class="grid grid-cols-3 gap-8 pt-8 sm:grid-cols-2 sm:pl-8 sm:pr-8">
+                <div class="grid grid-cols-3 gap-8 pt-8 sm:grid-cols-2 sm:pl-8 sm:pr-8 xl:pl-8 xl:pr-8 lg:pl-8 lg:pr-8">
                     <div class="border-[rgb(238,238,238)] border-2 rounded-lg flex items-center pt-2 pb-2 pl-4 pr-4 cursor-pointer transform transition-transform ease-in-out duration-300 hover:scale-105 hover:bg-orange-600">
                         <div class="h-10 w-20">
                             <img class="h-full w-full" src="../templates/images/html.png" alt="">
                         </div>
-                        <p class="w-full text-center font-semibold">HTML</p>
+                        <p class="w-full text-center font-semibold font-roboto">HTML</p>
                     </div>
                     <div class="border-[rgb(238,238,238)] border-2 rounded-lg flex items-center pt-2 pb-2 pl-4 pr-4 cursor-pointer transform transition-transform ease-in-out duration-300 hover:scale-105 hover:bg-sky-700">
                         <div class="h-10 w-20">
                             <img class="h-full w-full" src="../templates/images/social.png" alt="">
                         </div>
-                        <p class="w-full text-center font-semibold">CSS</p>
+                        <p class="w-full text-center font-semibold font-roboto">CSS</p>
                     </div>
                     <div class="border-[rgb(238,238,238)] border-2 rounded-lg flex items-center pt-2 pb-2 pl-4 pr-4 cursor-pointer transform transition-transform ease-in-out duration-300 hover:scale-105 hover:bg-yellow-600">
                         <div class="h-10 w-20">
                             <img class="h-full w-full" src="../templates/images/java-script.png" alt="">
                         </div>
-                        <p class="w-full text-center font-semibold">JavaScript</p>
+                        <p class="w-full text-center font-semibold font-roboto">JavaScript</p>
                     </div>
                     <div class="border-[rgb(238,238,238)] border-2 rounded-lg flex items-center pt-2 pb-2 pl-4 pr-4 cursor-pointer transform transition-transform ease-in-out duration-300 hover:scale-105 hover:bg-cyan-900">
                         <div class="h-10 w-20">
                             <img class="h-full w-full" src="../templates/images/tailwind.png" alt="">
                         </div>
-                        <p class="w-full text-center font-semibold">Tailwind</p>
+                        <p class="w-full text-center font-semibold font-roboto">Tailwind</p>
                     </div>
                 </div>
             </div>
 
             <div>
                 <div class="text-center">
-                    <h2 class="font-semibold text-lg">UI/UX</h2>
+                    <h2 class="font-semibold text-lg ">UI/UX</h2>
                 </div>
                 
                 <div class="grid grid-cols-2 gap-8 pt-8 sm:pl-8 sm:pr-8">
@@ -123,13 +125,13 @@
                         <div class="h-10 w-20">
                             <img class="h-full w-full" src="../templates/images/figma.png" alt="">
                         </div>
-                        <p class="w-full text-center font-semibold">Figma</p>
+                        <p class="w-full text-center font-semibold font-roboto">Figma</p>
                     </div>
                     <div class="border-[rgb(238,238,238)] border-2 rounded-lg flex items-center pt-2 pb-2 pl-4 pr-4 cursor-pointer transform transition-transform ease-in-out duration-300 hover:scale-105 hover:bg-sky-500">
                         <div class="h-10 w-20">
                             <img class="h-full w-full" src="../templates/images/canva.jpg" alt="">
                         </div>
-                        <p class="w-full text-center font-semibold">Canva</p>
+                        <p class="w-full text-center font-semibold font-roboto">Canva</p>
                     </div>
                 </div>
             </div>
@@ -138,7 +140,7 @@
 
     <section id="service" class="pb-80 bg-[rgb(44,44,44)] ">
         <div class="pt-32 text-center ">
-            <h1 class="text-3xl font-bold">My <span class="text-[rgb(160,160,255)]">Services</span></h1>
+            <h1 class="text-3xl font-bold font-rubik">My <span class="text-[rgb(160,160,255)]">Services</span></h1>
             <div class="grid grid-cols-3 place-items-center items-center gap-8 justify-evenly mt-40 mr-10 ml-10 md:grid-cols-1 lg:grid-cols-3 ">
                 <div class="bg-[rgb(38,37,37)] pb-12 pl-4 pr-4 rounded-md shadow-lg shadow-bg-[rgb(38,37,37)]">
                     <div class="flex justify-evenly items-center mt-4">
@@ -146,7 +148,7 @@
                         <h3 class="font-semibold text-lg">Front-end Development</h3>
                     </div>
                     <div class="text-center mt-6">
-                        <p class="text-sm">
+                        <p class="text-sm font-roboto">
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam architecto officia sint deleniti nesciunt possimus quod maxime, dolorem quos reiciendis, repellat reprehenderit minima fuga autem. Necessitatibus dolorem delectus nam sed.
                         </p>
                     </div>
@@ -157,7 +159,7 @@
                         <h3 class="font-semibold text-lg">Ui/Ux Design</h3>
                     </div>
                     <div class="text-center mt-6">
-                        <p class="text-sm">
+                        <p class="text-sm font-roboto">
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam architecto officia sint deleniti nesciunt possimus quod maxime, dolorem quos reiciendis, repellat reprehenderit minima fuga autem. Necessitatibus dolorem delectus nam sed.
                         </p>
                     </div>
@@ -168,7 +170,7 @@
                         <h3 class="font-semibold text-lg">Web Design</h3>
                     </div>
                     <div class="text-center mt-6">
-                        <p class="text-sm">
+                        <p class="text-sm font-roboto">
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam architecto officia sint deleniti nesciunt possimus quod maxime, dolorem quos reiciendis, repellat reprehenderit minima fuga autem. Necessitatibus dolorem delectus nam sed.
                         </p>
                     </div>
@@ -181,7 +183,7 @@
 
     <section id="projects">
         <div class="pt-32">
-            <h1 class="text-3xl text-center font-bold">My <span class="text-[rgb(0,173,181)]">Projects</span></h1>
+            <h1 class="text-3xl text-center font-bold font-rubik">My <span class="text-[rgb(0,173,181)]">Projects</span></h1>
             <div class="flex justify-evenly pl-10 pr-10">
                 <div class="grid grid-cols-3 gap-10 mt-10 md:grid-cols-2 sm:grid-cols-1">
                     <div class="bg-[rgb(44,44,44)] rounded-lg pl-4 pr-4 pb-8 cursor-pointer transform transition-transform ease-in-out duration-300 hover:scale-105 shadow-xl hover:shadow-gray-800">
@@ -190,7 +192,7 @@
                         </div>
                         <div class="grid grid-rows-1 gap-5 mt-8 ml-4">
                             <h6 class="font-bold">Movie Clone Website</h6>
-                            <p class="text-sm w-full">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate dicta qui nesciunt. </p>
+                            <p class="text-sm w-full font-roboto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate dicta qui nesciunt. </p>
                             <a class="w-28"  href="" target="_blank" class="text-sm font-extrabold">See project <span class="text-[rgb(255,111,97)]">&#8594</span></a>
                         </div>
                     </div>
@@ -200,7 +202,7 @@
                         </div>
                         <div class="grid grid-rows-1 gap-5 mt-8 ml-4">
                             <h6 class="font-bold">Movie Clone Website</h6>
-                            <p class="text-sm w-full">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate dicta qui nesciunt. </p>
+                            <p class="text-sm w-full font-roboto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate dicta qui nesciunt. </p>
                             <a class="w-28"  href="" target="_blank" class="text-sm font-extrabold">See project <span class="text-[rgb(255,111,97)]">&#8594</span></a>
                         </div>
                     </div>
@@ -210,7 +212,7 @@
                         </div>
                         <div class="grid grid-rows-1 gap-5 mt-8 ml-4">
                             <h6 class="font-bold">Movie Clone Website</h6>
-                            <p class="text-sm w-full">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate dicta qui nesciunt. </p>
+                            <p class="text-sm w-full font-roboto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate dicta qui nesciunt. </p>
                             <a class="w-28"  href="" target="_blank" class="text-sm font-extrabold">See project <span class="text-[rgb(255,111,97)]">&#8594</span></a>
                         </div>
                     </div>
@@ -232,7 +234,7 @@
             </div>
             <div class="bg-amber-500 h-[30rem] w-[40rem] grid justify-center items-center">
                 <div>
-                    <h1 class="font-bold text-center text-5xl sm:text-3xl">Contacts</h1>
+                    <h1 class="font-bold font-rubik text-center text-5xl sm:text-3xl">Contacts</h1>
                 </div>
                 <div>
                 <div class="grid grid-cols-2 justify-evenly gap-y-11 gap-x-16 lg:grid-cols-1 lg:gap-x-1 sm:gap-2 md:gap-2 xl:gap-3">

@@ -17,6 +17,12 @@ module.exports = {
 
       'sm': {'max': '639px'},
       // => @media (max-width: 639px) { ... }
+    },
+    fontFamily:{
+      'rubik': ['Rubik Mono One'],
+      'roboto': ['Roboto Mono'],
+      
+      
     }
     
   },
