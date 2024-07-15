@@ -11,12 +11,36 @@
     <link rel="icon" href="../templates/images/favicon.jpg" type="image/x-icon">
     <script src="script.js" defer></script>
     <title></natadportfolio></title>
+    <style>
+        .bounce-top {
+          animation: bounce-top 2s infinite;
+        }
+        .bounce-bottom {
+          animation: bounce-bottom 2s infinite;
+        }
+        @keyframes bounce-top {
+          0%, 100% {
+            transform: translateY(0);
+          }
+          50% {
+            transform: translateY(-20px);
+          }
+        }
+        @keyframes bounce-bottom {
+          0%, 100% {
+            transform: translateY(0);
+          }
+          50% {
+            transform: translateY(20px);
+          }
+        }
+      </style>
 </head>
 <body  class="bg-[rgb(30,30,30)] text-[rgb(255,255,255)]">
     <main id="home" class="h-screen">
         <header class="flex justify-evenly items-center p-3 h-24 fixed top-0 right-0 left-0 z-[100] bg-[rgb(30,30,30)] bg-opacity-15 sm:justify-between md:justify-between">
             <img class="w-28 h-8" src="../templates/images/natad.png" alt="">
-            <nav class="nav-links text-[rgb(255,255,255)] list-none flex gap-10 font-bold text-xl md:hidden">
+            <nav class="list-none flex gap-10 font-bold text-xl md:hidden">
               <a class="pl-1 pr-1 hover:text-amber-500 relative after:content-[''] after:absolute after:bg-amber-500 after:h-[3px] after:w-0 after:left-0 after:bottom-[-2px] after:transition-all after:duration-300 hover:after:w-full" href="#home">Home</a>
               <a class="pl-1 pr-1 hover:text-[rgb(50,205,50)] relative after:content-[''] after:absolute after:bg-[rgb(50,205,50)] after:h-[3px] after:w-0 after:left-0 after:bottom-[-2px] after:transition-all after:duration-300 hover:after:w-full" href="#about">About</a>
               <a class="pl-1 pr-1 hover:text-[rgb(160,160,255)] relative after:content-[''] after:absolute after:bg-[rgb(160,160,255)] after:h-[3px] after:w-0 after:left-0 after:bottom-[-2px] after:transition-all after:duration-300 hover:after:w-full" href="#service">Services</a>
@@ -30,15 +54,17 @@
               </svg>
             </button>
           </header>
-        <div class="grid grid-cols-2 pt-40 place-items-center lg:grid-cols-1 sm:mt-32 lg:mt-32 md:mt-32">
+        <div class="grid grid-cols-2 pt-52 place-items-center lg:grid-cols-1 sm:mt-32 lg:mt-32 md:mt-32">
             <div class="pl-16  md:text-center sm:pl-0 lg:pl-0 md:pl-0 sm:ml-4 sm:mr-4">
-                <h1 class="font-rubik text-4xl w-[full] md:text-center lg:text-center sm:text-2xl">Hi, My Name is Terence I <span class="text-[rgb(0,173,181)]">design</span> and <span class="text-amber-500">build </span>things on web.</h1>
+                <h1 class="font-rubik text-4xl w-[full] md:text-center lg:text-center sm:text-2xl lg:pl-6 lg:pr-6">Hi, My Name is Terence I <span class="text-[rgb(0,173,181)]">design</span> and <span class="text-amber-500">build </span>things on web.</h1>
                 <p class="mt-5 font-roboto md:text-center lg:text-center">
                      I’m a Front-end Developer and UI/UX designer based in Philippines.
                 </p>
             </div>
-            <div>
-                <img class="md:hidden lg:hidden sm:hidden " src="../templates/images/man-holding-cup.png" alt="">
+            <div class="relative w-96 h-96 flex items-center justify-center md:hidden lg:hidden sm:hidden">
+                <div class="absolute left-10 top-20 w-[23rem] h-[23rem] bg-[rgb(248,180,0)] rounded-full bounce-top"></div>
+                <div class="absolute right-20 w-[23rem] h-[23rem] bg-[rgb(0,173,181)] rounded-full bounce-bottom"></div>
+               <img class="relative" src="../templates/images/man-holding-cup.png" alt="">
             </div>
         </div>
     </main>
@@ -49,22 +75,24 @@
             <h2 class="font-bold text-3xl font-rubik ">About <span class="text-amber-500">Me</span></h2>
         </div>
 
-       <div class="flex justify-evenly mr-32 ml-32 sm:m-0">
-        <div class="grid grid-cols-2 place-items-center items-center justify-center mt-20 md:grid-cols-1 sm:grid-cols-1 gap-10 lg:grid-cols-1">
-            <div class="text-sm lg:text-center sm:pl-6 sm:pr-6 sm:text-justify font-roboto">
-                <p class="w-full leading-6 sm:indent-10">
+       <div class="flex justify-evenly mr-32 ml-32 sm:m-0 md:m-0 md:pl-8 md:pr-8">
+        <div class="grid grid-cols-2 place-items-center items-center justify-center mt-20 md:grid-cols-1 sm:grid-cols-1 sm:gap-14 lg:grid-cols-1">
+            <div class="text-sm lg:text-justify sm:pl-4 sm:pr-4 sm:text-justify font-roboto">
+                <p class="w-full leading-6 sm:indent-10 lg:indent-10">
                     Hi Everyone! My name is Terence Dave Natad,  a BSIT student of WMSU based in the Philippines. 
-                    I am currently focusing in HTML, CSS and Javascript as my core programming language.
+                    I am currently focusing in <span class="text-[rgb(0,173,181)]">HTML</span>, <span class="text-[rgb(248,180,0)]">CSS</span> and <span class="text-[rgb(50,205,50)]">Javascript</span> as my core programming language.
                 </p>
-                <p class="mt-5 w-full leading-6 sm:indent-10">
+                <p class="mt-5 w-full leading-6 sm:indent-10 lg:indent-10">
                     As a self-taught front-end developer and UI/UX designer, I've become proficient in HTML, CSS, JavaScript, and design tools such as Figma. 
                     I learnt how to develop dynamic and visually appealing web sites using online lessons and hands-on projects. This path has provided me with a unique view on the junction of design and development, 
                     allowing me to create seamless and user-friendly experiences. Balancing two responsibilities has been difficult but also gratifying, motivating my desire for continual learning and creativity.
                 </p>
             </div>
-            <div class="">
-                <img class="h-[20rem]" src="../templates/images/laptop.png" alt="">
-            </div>
+            <div class="relative">
+                <div class="absolute top-28 left-8 h-[20rem] w-[20rem] bg-[rgb(0,173,181)] shadow-md shadow-[rgb(0,173,181)] z-0 lg:w-[18rem] lg:h-[18rem] lg:top-9 lg:left-0 sm:w-[15rem] sm:h-[15rem] sm:top-20"></div>
+                <div class="absolute top-0 left-36 h-[20rem] w-[20rem] bg-[rgb(248,180,0)] shadow-md shadow-[rgb(248,180,0)] z-0 lg:w-[18rem] lg:h-[18rem] lg:top-0 lg:left-24 sm:w-[15rem] sm:h-[15rem]"></div>
+                <img class="relative z-10 left-20 top-8 h-[20rem] lg:left-0 lg:top-0" src="../templates/images/laptop.png" alt="">
+              </div>
                 <div class="grid grid-cols-3 gap-4 sm:flex-col  xl:flex flex-shrink-0 font-roboto">
                     <div class="bg-[rgb(24,23,23)] pl-10 pr-10 pb-10 text-center">
                         <h5 class="font-semibold text-xl mt-5">Experience</h5>
@@ -280,7 +308,7 @@
 
     </section>
 
-    <footer class="h-80 bg-[rgb(44,44,44)]">
+    <footer class="h-80 bg-[rgb(44,44,44)] m-0">
         <div class="flex flex-col justify-center items-center">
             <div class="mt-12 sm:h-16">
                 <img class="h-full" src="images/natad.png" alt="logo-name">
