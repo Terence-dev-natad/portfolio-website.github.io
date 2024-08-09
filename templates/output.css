@@ -678,6 +678,14 @@ video {
   margin-top: 2rem;
 }
 
+.ml-20 {
+  margin-left: 5rem;
+}
+
+.mr-20 {
+  margin-right: 5rem;
+}
+
 .flex {
   display: flex;
 }
@@ -867,6 +875,10 @@ video {
   row-gap: 2.75rem;
 }
 
+.overflow-x-hidden {
+  overflow-x: hidden;
+}
+
 .scroll-smooth {
   scroll-behavior: smooth;
 }
@@ -938,54 +950,6 @@ video {
 
 .bg-opacity-15 {
   --tw-bg-opacity: 0.15;
-}
-
-.bg-\[url\(\'\.\.\/templates\/images\/code-bg\.png\'\)\] {
-  background-image: url('../templates/images/code-bg.png');
-}
-
-.bg-contain {
-  background-size: contain;
-}
-
-.bg-auto {
-  background-size: auto;
-}
-
-.bg-fixed {
-  background-attachment: fixed;
-}
-
-.bg-center {
-  background-position: center;
-}
-
-.bg-left {
-  background-position: left;
-}
-
-.bg-left-top {
-  background-position: left top;
-}
-
-.bg-bottom {
-  background-position: bottom;
-}
-
-.bg-left-bottom {
-  background-position: left bottom;
-}
-
-.bg-no-repeat {
-  background-repeat: no-repeat;
-}
-
-.bg-repeat-y {
-  background-repeat: repeat-y;
-}
-
-.bg-origin-border {
-  background-origin: border-box;
 }
 
 .p-0 {
@@ -1074,6 +1038,14 @@ video {
 
 .pt-8 {
   padding-top: 2rem;
+}
+
+.pl-20 {
+  padding-left: 5rem;
+}
+
+.pr-20 {
+  padding-right: 5rem;
 }
 
 .text-center {
@@ -1195,24 +1167,6 @@ video {
 .shadow-\[rgb\(248\2c 180\2c 0\)\] {
   --tw-shadow-color: rgb(248,180,0);
   --tw-shadow: var(--tw-shadow-colored);
-}
-
-.backdrop-blur-0 {
-  --tw-backdrop-blur: blur(0);
-  -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
-          backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
-}
-
-.backdrop-blur-3xl {
-  --tw-backdrop-blur: blur(64px);
-  -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
-          backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
-}
-
-.backdrop-opacity-15 {
-  --tw-backdrop-opacity: opacity(0.15);
-  -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
-          backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
 }
 
 .transition-transform {
@@ -1366,28 +1320,6 @@ video {
   width: 100%;
 }
 
-@media (max-width: 1535px) {
-  .\32xl\:bg-\[url\(\'\.\.\/templates\/images\/code-bg\.png\'\)\] {
-    background-image: url('../templates/images/code-bg.png');
-  }
-
-  .\32xl\:bg-auto {
-    background-size: auto;
-  }
-
-  .\32xl\:bg-left-top {
-    background-position: left top;
-  }
-
-  .\32xl\:bg-repeat-y {
-    background-repeat: repeat-y;
-  }
-
-  .\32xl\:bg-origin-border {
-    background-origin: border-box;
-  }
-}
-
 @media (max-width: 1279px) {
   .xl\:top-\[-5rem\] {
     top: -5rem;
@@ -1397,40 +1329,8 @@ video {
     display: flex;
   }
 
-  .xl\:hidden {
-    display: none;
-  }
-
   .xl\:gap-3 {
     gap: 0.75rem;
-  }
-
-  .xl\:bg-\[url\(\'\.\.\/templates\/images\/code-bg\.png\'\)\] {
-    background-image: url('../templates/images/code-bg.png');
-  }
-
-  .xl\:bg-none {
-    background-image: none;
-  }
-
-  .xl\:bg-auto {
-    background-size: auto;
-  }
-
-  .xl\:bg-fixed {
-    background-attachment: fixed;
-  }
-
-  .xl\:bg-left-top {
-    background-position: left top;
-  }
-
-  .xl\:bg-repeat-y {
-    background-repeat: repeat-y;
-  }
-
-  .xl\:bg-origin-border {
-    background-origin: border-box;
   }
 
   .xl\:pl-8 {
@@ -1496,10 +1396,6 @@ video {
          column-gap: 0.25rem;
   }
 
-  .lg\:bg-contain {
-    background-size: contain;
-  }
-
   .lg\:pl-0 {
     padding-left: 0px;
   }
@@ -1560,14 +1456,6 @@ video {
 
   .md\:gap-2 {
     gap: 0.5rem;
-  }
-
-  .md\:bg-cover {
-    background-size: cover;
-  }
-
-  .md\:bg-no-repeat {
-    background-repeat: no-repeat;
   }
 
   .md\:pl-10 {

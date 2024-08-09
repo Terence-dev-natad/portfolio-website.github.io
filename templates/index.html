@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="scroll-smooth m-0 p-0" lang="en">
+<html class="scroll-smooth m-0 p-0 overflow-x-hidden" lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="output.css">
     <link rel="stylesheet" href="custom.css">
     <link rel="icon" href="../templates/images/favicon.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     <script src="script.js" defer></script>
     <title></natadportfolio></title>
 </head>
@@ -30,8 +32,8 @@
           </svg>
         </button>
       </header>
-    <main id="home" class="pb-52 pt-52   bg-[url('../templates/images/code-bg.png')] bg-repeat-y bg-auto bg-left-top bg-origin-border xl:bg-none  2xl:bg-[url('../templates/images/code-bg.png')]  2xl:bg-repeat-y 2xl:bg-auto 2xl:bg-left-top 2xl:bg-origin-border ">
-        <div class="flex justify-evenly items-center lg:flex-col lg:gap-40">
+    <main id="home" class="pb-52 pt-52">
+        <div class="flex justify-evenly items-center lg:flex-col lg:gap-40 ">
             <div class="w-1/2 md:text-center lg:w-full lg:pl-0 md:pl-4 md:pr-4 sm:pl-4 sm:pr-4">
                 <h1 class="font-rubik text-4xl md:text-center lg:text-center sm:text-2xl lg:pl-6 lg:pr-6">Hi, My Name is Terence I <span class="text-[rgb(0,173,181)]">design</span> and <span class="text-amber-500">build </span>things on web.</h1>
                 <p class="mt-5 font-roboto md:text-center lg:text-center">
@@ -46,15 +48,15 @@
         </div>
     </main>
 
-    <section id="about" class="pb-28 bg-[rgb(38,37,37)]">
+    <section  id="about" class="pb-28 bg-[rgb(38,37,37)]">
     <div class="pt-28">
         <div class="text-center">
             <h2 class="font-bold text-3xl font-rubik ">About <span class="text-amber-500">Me</span></h2>
         </div>
 
-       <div class="flex justify-evenly mr-32 ml-32 sm:m-0 md:m-0 md:pl-10 md:pr-10 ">
+       <div class="flex justify-evenly pr-20 pl-20 sm:m-0 md:m-0 md:pl-10 md:pr-10 ">
         <div class="grid grid-cols-2 place-items-center items-center justify-center mt-20 md:grid-cols-1 sm:grid-cols-1 sm:gap-14 lg:grid-cols-1 lg:gap-16">
-            <div class="text-sm lg:text-justify sm:pl-4 sm:pr-4 sm:text-justify font-roboto">
+            <div data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200"  class="text-sm lg:text-justify sm:pl-4 sm:pr-4 sm:text-justify font-roboto">
                 <p class="w-full leading-6 sm:indent-10 lg:indent-10">
                     Hi Everyone! My name is Terence Dave Natad,  a BSIT student of WMSU based in the Philippines. 
                     I am currently focusing in <span class="text-[rgb(0,173,181)]">HTML</span>, <span class="text-[rgb(248,180,0)]">CSS</span> and <span class="text-[rgb(50,205,50)]">Javascript</span> as my core programming language.
@@ -65,12 +67,12 @@
                     allowing me to create seamless and user-friendly experiences. Balancing two responsibilities has been difficult but also gratifying, motivating my desire for continual learning and creativity.
                 </p>
             </div>
-            <div class="relative xl:top-[-5rem] lg:top-0">
+            <div data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200"class="relative xl:top-[-5rem] lg:top-0">
                 <div class="absolute top-28 left-8 h-[20rem] w-[20rem] bg-[rgb(0,173,181)] shadow-md shadow-[rgb(0,173,181)] z-0 lg:w-[18rem] lg:h-[18rem] lg:top-9 lg:left-0 sm:w-[15rem] sm:h-[15rem] sm:top-20"></div>
                 <div class="absolute top-0 left-36 h-[20rem] w-[20rem] bg-[rgb(248,180,0)] shadow-md shadow-[rgb(248,180,0)] z-0 lg:w-[18rem] lg:h-[18rem] lg:top-0 lg:left-24 sm:w-[15rem] sm:h-[15rem]"></div>
                 <img class="relative z-10 left-20 top-8 h-[20rem] lg:left-0 lg:top-0" src="../templates/images/laptop.png" alt="">
             </div>
-                <div class="mt-10 grid grid-cols-3 gap-4 font-roboto sm:flex-col  xl:flex flex-shrink-0 ">
+                <div data-aos="fade-right" data-aos-duration="1000" data-aos-delay="300" class="mt-10 grid grid-cols-3 gap-4 font-roboto sm:flex-col  xl:flex flex-shrink-0 ">
                     <div class="bg-[rgb(24,23,23)] pl-10 pr-10 pb-10 text-center">
                         <h5 class="font-semibold text-xl mt-5">Experience</h5>
                         <h4 class="font-extrabold text-4xl mt-4">+ 0</h4>
@@ -89,7 +91,7 @@
     </div>
  </section>
 
-    <section class="pb-64 pt-52">
+    <section class="pb-64 pt-52 ">
         <div class="text-center">
             <h1 class="font-bold text-3xl font-rubik">My <span class="text-[rgb(50,205,50)]">Skills</span></h1>
         </div>
@@ -101,25 +103,25 @@
                 </div>
                 
                 <div class="grid grid-cols-3 gap-8 mt-8 sm:grid-cols-2 sm:pl-8 sm:pr-8 xl:pl-8 xl:pr-8 lg:pl-8 lg:pr-8">
-                    <div class="border-[rgb(238,238,238)] border-2 rounded-lg flex items-center pt-2 pb-2 pl-4 pr-4 cursor-pointer transform transition-transform ease-in-out duration-300 hover:scale-105 hover:bg-orange-600">
+                    <div data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="100" class="border-[rgb(238,238,238)] border-2 rounded-lg flex items-center pt-2 pb-2 pl-4 pr-4 cursor-pointer transform transition-transform ease-in-out duration-300 hover:scale-105 hover:bg-orange-600">
                         <div class="h-10 w-20">
                             <img class="h-full w-full" src="../templates/images/html.png" alt="">
                         </div>
                         <p class="w-full text-center font-semibold font-roboto">HTML</p>
                     </div>
-                    <div class="border-[rgb(238,238,238)] border-2 rounded-lg flex items-center pt-2 pb-2 pl-4 pr-4 cursor-pointer transform transition-transform ease-in-out duration-300 hover:scale-105 hover:bg-sky-700">
+                    <div data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="200" class="border-[rgb(238,238,238)] border-2 rounded-lg flex items-center pt-2 pb-2 pl-4 pr-4 cursor-pointer transform transition-transform ease-in-out duration-300 hover:scale-105 hover:bg-sky-700">
                         <div class="h-10 w-20">
                             <img class="h-full w-full" src="../templates/images/social.png" alt="">
                         </div>
                         <p class="w-full text-center font-semibold font-roboto">CSS</p>
                     </div>
-                    <div class="border-[rgb(238,238,238)] border-2 rounded-lg flex items-center pt-2 pb-2 pl-4 pr-4 cursor-pointer transform transition-transform ease-in-out duration-300 hover:scale-105 hover:bg-yellow-600">
+                    <div data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="300" class="border-[rgb(238,238,238)] border-2 rounded-lg flex items-center pt-2 pb-2 pl-4 pr-4 cursor-pointer transform transition-transform ease-in-out duration-300 hover:scale-105 hover:bg-yellow-600">
                         <div class="h-10 w-20">
                             <img class="h-full w-full" src="../templates/images/java-script.png" alt="">
                         </div>
                         <p class="w-full text-center font-semibold font-roboto">JavaScript</p>
                     </div>
-                    <div class="border-[rgb(238,238,238)] border-2 rounded-lg flex items-center pt-2 pb-2 pl-4 pr-4 cursor-pointer transform transition-transform ease-in-out duration-300 hover:scale-105 hover:bg-cyan-900">
+                    <div data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="400" class="border-[rgb(238,238,238)] border-2 rounded-lg flex items-center pt-2 pb-2 pl-4 pr-4 cursor-pointer transform transition-transform ease-in-out duration-300 hover:scale-105 hover:bg-cyan-900">
                         <div class="h-10 w-20">
                             <img class="h-full w-full" src="../templates/images/tailwind.png" alt="">
                         </div>
@@ -134,13 +136,13 @@
                 </div>
                 
                 <div class="grid grid-cols-2 gap-8 pt-8 sm:pl-8 sm:pr-8">
-                    <div class="border-[rgb(238,238,238)] border-2 rounded-lg flex items-center pt-2 pb-2 pl-4 pr-4 cursor-pointer transform transition-transform ease-in-out duration-300 hover:scale-105 hover:bg-slate-950">
+                    <div data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="100" class="border-[rgb(238,238,238)] border-2 rounded-lg flex items-center pt-2 pb-2 pl-4 pr-4 cursor-pointer transform transition-transform ease-in-out duration-300 hover:scale-105 hover:bg-slate-950">
                         <div class="h-10 w-20">
                             <img class="h-full w-full" src="../templates/images/figma.png" alt="">
                         </div>
                         <p class="w-full text-center font-semibold font-roboto">Figma</p>
                     </div>
-                    <div class="border-[rgb(238,238,238)] border-2 rounded-lg flex items-center pt-2 pb-2 pl-4 pr-4 cursor-pointer transform transition-transform ease-in-out duration-300 hover:scale-105 hover:bg-sky-500">
+                    <div data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="200" class="border-[rgb(238,238,238)] border-2 rounded-lg flex items-center pt-2 pb-2 pl-4 pr-4 cursor-pointer transform transition-transform ease-in-out duration-300 hover:scale-105 hover:bg-sky-500">
                         <div class="h-10 w-20">
                             <img class="h-full w-full" src="../templates/images/canva.jpg" alt="">
                         </div>
@@ -155,7 +157,7 @@
         <div class="pt-32 text-center ">
             <h1 class="text-3xl font-bold font-rubik">My <span class="text-[rgb(160,160,255)]">Services</span></h1>
             <div class="grid grid-cols-3 place-items-center items-center gap-8 justify-evenly mt-40 mr-10 ml-10 md:grid-cols-1 lg:grid-cols-3 ">
-                <div class="bg-[rgb(38,37,37)] pb-12 pl-4 pr-4 rounded-md shadow-lg shadow-bg-[rgb(38,37,37)]">
+                <div data-aos="zoom-out" data-aos-duration="1000" data-aos-delay="100" class="bg-[rgb(38,37,37)] pb-12 pl-4 pr-4 rounded-md shadow-lg shadow-bg-[rgb(38,37,37)]">
                     <div class="flex justify-evenly items-center mt-4">
                         <img class="h-10 " src="../templates/images/frontend.png " alt="">
                         <h3 class="font-semibold text-lg">Front-end Development</h3>
@@ -166,7 +168,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="bg-[rgb(38,37,37)] pb-12 pl-4 pr-4 rounded-md shadow-lg shadow-bg-[rgb(38,37,37)]"">
+                <div data-aos="zoom-out" data-aos-duration="1000" data-aos-delay="100" class="bg-[rgb(38,37,37)] pb-12 pl-4 pr-4 rounded-md shadow-lg shadow-bg-[rgb(38,37,37)]"">
                     <div class="flex justify-evenly items-center mt-4">
                         <img class="h-10" src="../templates/images/uiux.png " alt="">
                         <h3 class="font-semibold text-lg">Ui/Ux Design</h3>
@@ -177,7 +179,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="bg-[rgb(38,37,37)] pb-12 pl-4 pr-4 rounded-md shadow-lg shadow-bg-[rgb(38,37,37)]"">
+                <div data-aos="zoom-out" data-aos-duration="1000" data-aos-delay="100" class="bg-[rgb(38,37,37)] pb-12 pl-4 pr-4 rounded-md shadow-lg shadow-bg-[rgb(38,37,37)]"">
                     <div class="flex justify-evenly items-center mt-4">
                         <img class="h-10" src="../templates/images/webdesign.png " alt="">
                         <h3 class="font-semibold text-lg">Web Design</h3>
@@ -199,7 +201,7 @@
             <h1 class="text-3xl text-center font-bold font-rubik">My <span class="text-[rgb(0,173,181)]">Projects</span></h1>
             <div class="flex justify-evenly pl-10 pr-10">
                 <div class="grid grid-cols-3 gap-10 mt-10 md:grid-cols-2 sm:grid-cols-1">
-                    <div class="bg-[rgb(44,44,44)] rounded-lg pl-4 pr-4 pb-8 transform transition-transform ease-in-out duration-300 hover:scale-105 shadow-xl hover:shadow-gray-800">
+                    <div  data-aos="zoom-out" data-aos-duration="1000" data-aos-delay="100" class="bg-[rgb(44,44,44)] rounded-lg pl-4 pr-4 pb-8 transform transition-transform ease-in-out duration-300 hover:scale-105 shadow-xl hover:shadow-gray-800">
                         <div class="grid grid-rows-1 place-items-center mt-8">
                             <img class="rounded-lg h-full" src="../templates/images/movie.png" alt="">
                         </div>
@@ -209,7 +211,7 @@
                             <a class="w-28"  href="" target="_blank" class="text-sm font-extrabold">See project <span class="text-[rgb(255,111,97)]">&#8594</span></a>
                         </div>
                     </div>
-                    <div class="bg-[rgb(44,44,44)] rounded-lg pl-4 pr-4 pb-8 transform transition-transform ease-in-out duration-300 hover:scale-105 shadow-xl hover:shadow-gray-800">
+                    <div  data-aos="zoom-out" data-aos-duration="1000" data-aos-delay="100" class="bg-[rgb(44,44,44)] rounded-lg pl-4 pr-4 pb-8 transform transition-transform ease-in-out duration-300 hover:scale-105 shadow-xl hover:shadow-gray-800">
                         <div class="grid grid-rows-1 place-items-center mt-8">
                             <img class="rounded-lg h-full" src="../templates/images/movie.png" alt="">
                         </div>
@@ -219,7 +221,7 @@
                             <a class="w-28"  href="" target="_blank" class="text-sm font-extrabold">See project <span class="text-[rgb(255,111,97)]">&#8594</span></a>
                         </div>
                     </div>
-                    <div class="bg-[rgb(44,44,44)] rounded-lg pl-4 pr-4 pb-8 transform transition-transform ease-in-out duration-300 hover:scale-105 shadow-xl hover:shadow-gray-800">
+                    <div  data-aos="zoom-out" data-aos-duration="1000" data-aos-delay="100" class="bg-[rgb(44,44,44)] rounded-lg pl-4 pr-4 pb-8 transform transition-transform ease-in-out duration-300 hover:scale-105 shadow-xl hover:shadow-gray-800">
                         <div class="grid grid-rows-1 place-items-center mt-8">
                             <img class="rounded-lg h-full" src="../templates/images/movie.png" alt="">
                         </div>
@@ -242,33 +244,33 @@
             <h1 class="font-bold text-3xl sm:text-lg sm:pl-4 sm:pr-4 font-rubik">Connect with me to learn more about my work and <br> collaborate on exciting projects.</h1>
         </div>
         <div class="mt-12 flex gap-2 justify-center items-center">
-            <div class="bg-[rgb(0,173,181)] h-[30rem] w-[40rem] flex justify-center items-center sm:hidden">
-                <img class="h-[25rem]" src="../templates/images/3dboy.png" alt="">
+            <div data-aos="zoom-in-right" data-aos-duration="1000" data-aos-delay="100" class="bg-[rgb(0,173,181)] h-[30rem] w-[40rem] flex justify-center items-center sm:hidden">
+                <img data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="500" class="h-[25rem]" src="../templates/images/3dboy.png" alt="">
             </div>
-            <div class="bg-amber-500 h-[30rem] w-[40rem] grid justify-center items-center">
+            <div data-aos="zoom-in-left" data-aos-duration="1000" data-aos-delay="100" class="bg-amber-500 h-[30rem] w-[40rem] grid justify-center items-center">
                 <div>
                     <h1 class="font-bold font-rubik text-center text-5xl sm:text-3xl">Contacts</h1>
                 </div>
                 <div>
-                <div class="grid grid-cols-2 justify-evenly place-items-center gap-y-11 gap-x-16 lg:grid-cols-1 lg:gap-x-1 sm:gap-2 md:gap-2 xl:gap-3">
+                <div data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="500" class="grid grid-cols-2 justify-evenly place-items-center gap-y-11 gap-x-16 lg:grid-cols-1 lg:gap-x-1 sm:gap-2 md:gap-2 xl:gap-3">
                     <div class="bg-[rgba(255,216,99,0.27)] h-20 w-56 grid grid-rows place-items-center rounded-lg">
-                        <h2 class="font-bold">Send me an email here <span class="">&darr;</span></h2>
+                        <h2 class="font-bold">Send me an email here </h2>
                         <a class="font-semibold bg-slate-800 rounded-lg w-36 h-8 text-center flex justify-center items-center hover:bg-[rgb(255,111,97)] hover:scale-105" href="mailto:terencedavenatad@gmail.com">
                             Mail Me
                         </a>
                     </div>
                     <div class="bg-[rgba(255,216,99,0.27)] h-20 w-56 grid grid-rows place-items-center rounded-lg">
-                        <h2 class="font-bold">Download my CV here <span class="">&darr;</span></h2>
+                        <h2 class="font-bold">Download my CV here </h2>
                         <a class="font-semibold bg-slate-800 rounded-lg w-36 h-8 text-center flex justify-center items-center hover:bg-[rgb(255,111,97)] hover:scale-105" href="path/to.your-cv.pdf" download="">
                             Download CV
                         </a>
                     </div>
                     <div class="bg-[rgba(255,216,99,0.27)] h-20 w-56 grid grid-rows place-items-center rounded-lg">
-                        <h2 class="font-bold">Contact with me here <span class="">&darr;</span></h2>
+                        <h2 class="font-bold">Contact with me here </h2>
                         <a class="font-semibold bg-slate-800 rounded-lg w-36 h-8 text-center flex justify-center items-center hover:bg-[rgb(255,111,97)] hover:scale-105" href=tel:+9657363643>Contact Me</a>
                     </div>
                     <div class="bg-[rgba(255,216,99,0.27)] h-20 w-56 grid grid-rows place-items-center rounded-lg">
-                        <h2 class="font-bold">My Socials here <span class="">&darr;</span></h2>
+                        <h2 class="font-bold">My Socials here </h2>
                         <div class="grid grid-cols-4 gap-2 bg-slate-800 rounded-lg w-36 h-8 place-items-center ">
                             <a  href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
                             <a  href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>

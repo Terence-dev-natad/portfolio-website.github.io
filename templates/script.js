@@ -18,3 +18,9 @@ window.addEventListener('scroll', () => {
   
   lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; 
 });
+
+
+
+document.addEventListener('DOMContentLoaded', function() {
+  AOS.init();
+});
