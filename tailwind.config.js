@@ -21,8 +21,6 @@ module.exports = {
     fontFamily:{
       'rubik': ['Rubik Mono One'],
       'roboto': ['Roboto Mono'],
-      
-      
     }
     
   },
