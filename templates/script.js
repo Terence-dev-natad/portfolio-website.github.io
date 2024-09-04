@@ -24,3 +24,11 @@ window.addEventListener('scroll', () => {
 document.addEventListener('DOMContentLoaded', function() {
   AOS.init();
 });
+
+
+const hamburgerMenu = document.querySelector('.hamburger');
+const navBar = document.querySelector('.navigation');
+
+hamburgerMenu.addEventListener('click', () => {
+    navBar.classList.toggle('open');
+} );

@@ -2,3 +2,55 @@
 @tailwind components;
 @tailwind utilities;
 
+
+@layer components{
+    .responsive-heading{
+        @apply font-rubik md:text-center lg:text-center lg:pl-6 lg:pr-6;
+        font-size: clamp(1.5rem, 3rem, 3vw);
+    }
+    .responsive-heading-2{
+        font-size: clamp(1.5rem, 3rem, 3vw);
+    }
+    .responsive-navbar{
+        @apply list-none flex gap-10 font-bold text-xl md:hidden lg:hidden;
+
+        @media (max-width: 1023px){
+            display: none;
+            flex-direction: column;
+            width: 100%;
+            position: absolute;
+            top: 60px;
+            left: 0;
+        }
+    }
+    .bounce-top {
+      animation: bounce-top 2s infinite;
+    }
+    .bounce-bottom {
+      animation: bounce-bottom 2s infinite;
+    }
+    @keyframes bounce-top {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-20px);
+      }
+    }
+    @keyframes bounce-bottom {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(20px);
+      }
+    }
+    .hidden-header {
+        transform: translateY(-100%);
+        transition: transform 0.3s ease;
+    }
+    .visible-header {
+        transform: translateY(0);
+        transition: transform 0.3s ease;
+    }
+}
