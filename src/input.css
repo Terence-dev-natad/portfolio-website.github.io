@@ -12,7 +12,7 @@
         font-size: clamp(1.5rem, 3rem, 3vw);
     }
     .responsive-navbar{
-        @apply list-none flex gap-10 font-bold text-xl md:hidden lg:hidden;
+        @apply list-none flex gap-10 font-bold text-xl;
 
         @media (max-width: 1023px){
             display: none;
@@ -23,28 +23,6 @@
             left: 0;
         }
     }
-    .bounce-top {
-      animation: bounce-top 2s infinite;
-    }
-    .bounce-bottom {
-      animation: bounce-bottom 2s infinite;
-    }
-    @keyframes bounce-top {
-      0%, 100% {
-        transform: translateY(0);
-      }
-      50% {
-        transform: translateY(-20px);
-      }
-    }
-    @keyframes bounce-bottom {
-      0%, 100% {
-        transform: translateY(0);
-      }
-      50% {
-        transform: translateY(20px);
-      }
-    }
     .hidden-header {
         transform: translateY(-100%);
         transition: transform 0.3s ease;
@@ -53,4 +31,35 @@
         transform: translateY(0);
         transition: transform 0.3s ease;
     }
+            /* Masonry container */
+            .masonry-grid {
+              display: grid;
+              grid-template-columns: 1fr; 
+              gap: 8px; 
+              max-width: 1200px;
+              margin: 0 auto;
+              padding: 8px; 
+              }
+  
+              /* Adjust for larger screens */
+              @media (min-width: 768px) {
+              .masonry-grid {
+                  grid-template-columns: repeat(2, 1fr); 
+              }
+              }
+  
+              @media (min-width: 1024px) {
+              .masonry-grid {
+                  grid-template-columns: repeat(3, 1fr); 
+              }
+              }
+  
+              /* Masonry item styles */
+              .masonry-item img {
+              width: 100%; 
+              display: block;
+              border-radius: 6px; 
+              box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+              }     
+                
 }

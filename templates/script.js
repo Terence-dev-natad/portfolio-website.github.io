@@ -1,3 +1,4 @@
+
 let lastScrollTop = 0;
 const header = document.getElementById('header');
 let scrollTimeout;
@@ -26,9 +27,4 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
-const hamburgerMenu = document.querySelector('.hamburger');
-const navBar = document.querySelector('.navigation');
 
-hamburgerMenu.addEventListener('click', () => {
-    navBar.classList.toggle('open');
-} );
