@@ -14,9 +14,9 @@
 </head>
 <body  class="bg-[rgb(30,30,30)] text-[rgb(255,255,255)] ">
     <div id="particles-js" class="absolute top-0 left-0 w-full h-full"></div>
-    <header id="header" class="flex justify-evenly items-center p-3 h-24 fixed top-0 right-0 left-0 z-[100] lg:justify-between">
+    <header id="header" class="bg-[rgb(30,30,30,0.1)] backdrop-blur-sm flex justify-evenly items-center p-3 h-24 fixed top-0 right-0 left-0 z-[100] lg:justify-between">
         <a href="#home"><img class="w-40 h-9" src="../templates/images/natad.png" alt=""></a>
-        <nav id="nav-links" class="responsive-navbar lg:hidden xl:flex lg:mt-6">
+        <nav id="nav-links" class="responsive-navbar  lg:hidden xl:flex lg:mt-6">
           <a class="pl-1 pr-1 hover:text-amber-500 relative after:content-[''] after:absolute after:bg-amber-500 after:h-[3px] after:w-0 after:left-0 after:bottom-[-2px] after:transition-all after:duration-300 hover:after:w-full lg:hover:after:w-0" href="#home">Home</a>
           <a class="pl-1 pr-1 hover:text-[rgb(50,205,50)] relative after:content-[''] after:absolute after:bg-[rgb(50,205,50)] after:h-[3px] after:w-0 after:left-0 after:bottom-[-2px] after:transition-all after:duration-300 hover:after:w-full lg:hover:after:w-0" href="#about">About</a>
           <a class="pl-1 pr-1 hover:text-[rgb(160,160,255)] relative after:content-[''] after:absolute after:bg-[rgb(160,160,255)] after:h-[3px] after:w-0 after:left-0 after:bottom-[-2px] after:transition-all after:duration-300 hover:after:w-full lg:hover:after:w-0" href="#service">Services</a>
@@ -31,6 +31,12 @@
             <rect y="60" width="100" height="10"></rect>
           </svg>
         </button>
+        <button id="ekis" class="border rounded-md p-3 hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                <line x1="4" y1="4" x2="20" y2="20" stroke="white" stroke-width="2" stroke-linecap="round" />
+                <line x1="4" y1="20" x2="20" y2="4" stroke="white" stroke-width="2" stroke-linecap="round" />
+              </svg>
+          </button>
     </header>    
 
     <main id="home" class="h-dvh flex justify-center items-center">
@@ -274,39 +280,66 @@
     <section class="py-6">
         <div class="text-center pt-20 mb-6">
           <h1 class="text-3xl font-bold font-rubik">My <span class="text-[rgb(0,173,181)]">Galleria</span></h1>
-          <p class="text-xl text-[#fefefe] font-semibold font-roboto mt-6">Welcome to my portfolio, where I showcase a collection of my creative projects. From graphic designs to photography, Explore my creations and see how I bring ideas to life!</p>
+          <p class="text-xl text-[#fefefe] font-semibold font-roboto mt-6 text-justify indent-14 leading-9 pl-20 pr-20 sm:pl-12 sm:pr-12">Welcome to my Masonry Galleria, where I showcase a collection of my creative projects—from graphic designs to photography. I use tools like Figma and Photoshop to bring my ideas to life. Explore my creations and be inspired.</p>
         </div>
       
-        <!-- Masonry container -->
         <div class="masonry-grid sm:px-10">
-          <div class="masonry-item">
-            <img src="../templates/images/socialyt.png" alt="Socialyt" class="rounded-lg shadow-sm">
+            <div class="masonry-item relative group">
+              <img src="../templates/images/socialyt.png" alt="Socialyt" class="rounded-lg shadow-sm transform transition duration-300 group-hover:blur-sm">
+              <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 flex items-center justify-center transition duration-300">
+                <p class="text-[#fff] text-center font-roboto font-semibold px-8">This is my own work I created a clone of the YouTube channel design in Figma.</p>
+              </div>
+            </div>
+            <div class="masonry-item relative group">
+              <img src="../templates/images/sloganposter.jpg" alt="Sloganposter" class="rounded-lg shadow-sm transform transition duration-300 group-hover:blur-sm">
+              <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 flex items-center justify-center transition duration-300">
+                <p class="text-[#fff] text-center font-roboto font-semibold px-8">This is my advocacy poster, conveying the message that justice is for all, not just for the rich.</p>
+              </div>
+            </div>
+            <div class="masonry-item relative group">
+              <img src="../templates/images/photography.jpg" alt="Photography" class="rounded-lg shadow-sm transform transition duration-300 group-hover:blur-sm">
+              <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 flex items-center justify-center transition duration-300">
+                <p class="text-[#fff] text-center font-roboto font-semibold px-8">This photo was taken in the grandstand during the awarding ceremony, where we won back-to-back gold medals in esports (MLBB).</p>
+              </div>
+            </div>
+            <div class="masonry-item relative group">
+              <img src="../templates/images/selfportrait.jpg" alt="Selfportrait" class="rounded-lg shadow-sm transform transition duration-300 group-hover:blur-sm">
+              <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 flex items-center justify-center transition duration-300">
+                <p class="text-[#fff] text-center font-roboto font-semibold px-8">This is my self-portrait art, edited in Photoshop. The concept depicts an angel gazing at the sun and the sky.</p>
+              </div>
+            </div>
+            <div class="masonry-item relative group">
+              <img src="../templates/images/typographyart.jpg" alt="Typographyart" class="rounded-lg shadow-sm transform transition duration-300 group-hover:blur-sm">
+              <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 flex items-center justify-center transition duration-300">
+                <p class="text-[#fff] text-center font-roboto font-semibold px-8">This is my typography art created in Photoshop. The concept is based on the guitar because playing guitar is one of my hobbies.</p>
+              </div>
+            </div>
+            <div class="masonry-item relative group">
+              <img src="../templates/images/layoutlogo.jpg" alt="Layoutlogo" class="rounded-lg shadow-sm transform transition duration-300 group-hover:blur-sm">
+              <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 flex items-center justify-center transition duration-300">
+                <p class="text-[#fff] text-center font-roboto font-semibold px-8">This is the layout I created for a logo design for a social enterprise, which I edited using Photoshop.</p>
+              </div>
+            </div>
+            <div class="masonry-item relative group">
+              <img src="../templates/images/logoCasava.jpg" alt="LogoCasava" class="rounded-lg shadow-sm transform transition duration-300 group-hover:blur-sm">
+              <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 flex items-center justify-center transition duration-300">
+                <p class="text-[#fff] text-center font-roboto font-semibold px-8">This is the logo design I created using Photoshop. It represents the visual branding of our social enterprise.</p>
+              </div>
+            </div>
+            <div class="masonry-item relative group">
+              <img src="../templates/images/esportChamp.jpg" alt="EsportChamp" class="rounded-lg shadow-sm transform transition duration-300 group-hover:blur-sm">
+              <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 flex items-center justify-center transition duration-300">
+                <p class="text-[#fff] text-center font-roboto font-semibold px-8">This photo was taken during the photoshoot of our esports roster team, and I edited it using Photoshop.</p>
+              </div>
+            </div>
+            <div class="masonry-item relative group">
+              <img src="../templates/images/flyerposter.png" alt="Flyerposter" class="rounded-lg shadow-sm transform transition duration-300 group-hover:blur-sm">
+              <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 flex items-center justify-center transition duration-300">
+                <p class="text-[#fff] text-center font-roboto font-semibold px-8">This flyer/poster I created is for a music festival featuring emo bands, and I used Canva to edit it.</p>
+              </div>
+            </div>
           </div>
-          <div class="masonry-item">
-            <img src="../templates/images/sloganposter.jpg" alt="Sloganposter" class="rounded-lg shadow-sm">
-          </div>
-          <div class="masonry-item">
-            <img src="../templates/images/photography.jpg" alt="Photography" class="rounded-lg shadow-sm">
-          </div>
-          <div class="masonry-item">
-            <img src="../templates/images/selfportrait.jpg" alt="Selfportrait" class="rounded-lg shadow-sm">
-          </div>
-          <div class="masonry-item">
-            <img src="../templates/images/typographyart.jpg" alt="Typographyart" class="rounded-lg shadow-sm">
-          </div>
-          <div class="masonry-item">
-            <img src="../templates/images/layoutlogo.jpg" alt="Layoutlogo" class="rounded-lg shadow-sm">
-          </div>
-          <div class="masonry-item">
-            <img src="../templates/images/logoCasava.jpg" alt="LogoCasava" class="rounded-lg shadow-sm">
-          </div>
-          <div class="masonry-item">
-            <img src="../templates/images/esportChamp.jpg" alt="EsportChamp" class="rounded-lg shadow-sm">
-          </div>
-          <div class="masonry-item">
-            <img src="../templates/images/flyerposter.png" alt="Flyerposter" class="rounded-lg shadow-sm">
-          </div>
-        </div>
+          
       </section>
       
 

@@ -28,10 +28,44 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
-//header functional responsive
 const hamb = document.getElementById('hamburger');
-hamb.addEventListener('click', () =>{
-  document.getElementById('nav-links').classList.toggle('lg:hidden')
-  document.getElementById('nav-links').classList.add('lg:bg-green-300', 'lg:p-4')
-})
+const ekis = document.getElementById('ekis');
+const navLinks = document.getElementById('nav-links');
+
+hamb.addEventListener('click', () => {
+  navLinks.classList.toggle('lg:hidden');
+  navLinks.classList.add('lg:bg-black/70', 'lg:backdrop-blur-sm', 'lg:p-4', 'lg:text-center', 'md:text-left');
+  hamb.classList.toggle('lg:hidden');
+  ekis.classList.toggle('lg:flex');
+
+  // Apply the transition effect to navLinks when opened
+  if (!navLinks.classList.contains('lg:hidden')) {
+    navLinks.style.transform = 'translateX(0)';
+    navLinks.style.opacity = '1';
+  } else {
+    navLinks.style.transform = 'translateX(-100%)';
+    navLinks.style.opacity = '0';
+  }
+});
+
+ekis.addEventListener('click', () => {
+  navLinks.classList.toggle('lg:hidden');
+  hamb.classList.toggle('lg:hidden');
+  ekis.classList.toggle('lg:flex');
+
+  // Reset transition when closing the menu
+  if (navLinks.classList.contains('lg:hidden')) {
+    navLinks.style.transform = 'translateX(-100%)';
+    navLinks.style.opacity = '0';
+  } else {
+    navLinks.style.transform = 'translateX(0)';
+    navLinks.style.opacity = '1';
+  }
+});
+
+if (hamb.classList.contains('lg:hidden')) {
+  ekis.classList.add('lg:hidden');
+} else {
+  hamb.classList.add('lg:flex');
+}
 
