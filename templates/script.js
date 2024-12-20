@@ -28,3 +28,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
+//header functional responsive
+const hamb = document.getElementById('hamburger');
+hamb.addEventListener('click', () =>{
+  document.getElementById('nav-links').classList.toggle('lg:hidden')
+  document.getElementById('nav-links').classList.add('lg:bg-green-300', 'lg:p-4')
+})
+
