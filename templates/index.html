@@ -52,9 +52,8 @@
         <div class="text-center">
             <h2 class="font-bold text-3xl font-rubik ">About <span class="text-amber-500">Me</span></h2>
         </div>
-       <div class="flex justify-evenly pr-20 pl-20 sm:pr-8 sm:pl-8">
-        <div class="grid grid-cols-2 place-items-center items-center justify-center mt-20 md:grid-cols-1 sm:grid-cols-1 sm:gap-14 lg:grid-cols-1 lg:gap-16 xl:px-20 sm:pr-0 sm:pl-0">
-            <div data-aos="fade-right" data-aos-delay="100" data-aos-duration="1000" class="text-sm lg:text-justify sm:text-justify font-roboto">
+        <div class="grid grid-cols-2 justify-center items-center mt-12 lg:grid-cols-1 lg:justify-center md:gap-10">
+            <div data-aos="fade-right" data-aos-delay="100" data-aos-duration="1000" class="text-sm pl-20 text-justify indent-10 sm:text-left font-roboto lg:px-20 md:px-12 sm:px-6">
                 <p class="w-full text-[1rem] leading-6 sm:indent-10 lg:indent-10">
                     Hi Everyone! My name is Terence Dave Natad,  a BSIT student of WMSU based in the Philippines. 
                     I am currently focusing in <span class="text-[rgb(0,173,181)]">HTML</span>, <span class="text-[rgb(248,180,0)]">CSS</span> and <span class="text-[rgb(50,205,50)]">Javascript</span> as my core programming language.
@@ -63,64 +62,44 @@
                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos magnam ipsa repellendus non veritatis? Doloribus modi laborum voluptatem voluptates voluptatum, consectetur quam rem nemo accusantium quidem excepturi debitis error nobis. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi, molestias? Eligendi architecto aperiam quasi debitis! Ut dolore qui a eos hic ad minima veritatis sit fugiat, labore itaque reprehenderit at?
                 </p>
             </div>
-            <div class="relative xl:top-[-5rem] lg:top-0 sm:flex sm:justify-center sm:items-center">
-                <div
-                    data-aos="fade-zoom-in"
-                    data-aos-easing="ease-in-back"
-                    data-aos-delay="180"
-                    data-aos-offset="0"
-                    data-aos-duration="1000"
-                    class="absolute bg-[rgb(0,173,181)] shadow-md shadow-[rgb(0,173,181)] z-0
-                               h-[20rem] w-[20rem] top-28 left-8 
-                               lg:h-[18rem] lg:w-[18rem] lg:top-9 lg:left-[-4rem] 
-                               md:h-[16rem] md:w-[16rem] md:top-16 md:left-[-2rem]
-                               sm:h-[14rem] sm:w-[14rem] sm:top-20 sm:left-[-3rem]">
+            <div class="relative flex justify-center items-center">
+                <!-- Blur Box -->
+                <div class="absolute inset-0 bg-white bg-opacity-25 rounded-lg blur-xl z-0 p-4">
+                    <!-- The padding (p-4) is added to give the blur box some space around the profile image -->
                 </div>
-                <div
-                    data-aos="fade-zoom-in"
-                    data-aos-easing="ease-in-back"
-                    data-aos-delay="150"
-                    data-aos-offset="0"
-                    data-aos-duration="1000"
-                    class="absolute bg-[rgb(248,180,0)] shadow-md shadow-[rgb(248,180,0)] z-0
-                               h-[20rem] w-[20rem] top-0 left-36 
-                               lg:h-[18rem] lg:w-[18rem] lg:top-0 lg:left-24 
-                               md:h-[16rem] md:w-[16rem] md:right-[-3rem] 
-                               sm:h-[14rem] sm:w-[14rem] sm:mt-8 sm:left-8">
-                </div>
-                <img
-                data-aos="fade-left"
-                data-aos-delay="100"
-                data-aos-duration="1000"
-                data-aos-offset="200"
-                class="relative border-solid border-2 mt-8 rounded-full z-10
-                           h-[20rem] top-8 left-20
-                           lg:h-[18rem] lg:top-0 lg:left-0 
-                           md:h-[16rem] md:top-4  
-                           sm:h-[14rem] sm:top-6
-                           shadow-[0_0_25px_10px_rgba(0,173,181,0.5)]"
-                src="../templates/images/pro-profile.png"
-                alt="Profile Image">
             
+                <!-- Profile Image -->
+                <img
+                    data-aos="fade-left"
+                    data-aos-delay="100"
+                    data-aos-duration="1000"
+                    data-aos-offset="200"
+                    class="relative border-solid border-8 mt-8 rounded-lg z-10
+                        h-[20rem]
+                        lg:h-[18rem]
+                        md:h-[16rem] 
+                        sm:h-[14rem] 
+                        transition-all duration-500 ease-in-out
+                        hover:shadow-[0_0_25px_15px_rgba(0,173,181,0.7)]"
+                    src="../templates/images/pro-profile.png"
+                    alt="Profile Image">
             </div>
-            <div>
-                <div data-aos="fade-right" data-aos-delay="100" data-aos-duration="1000" class="mt-10 grid grid-cols-3 gap-4 font-roboto sm:flex-col sm:mt-20  xl:flex flex-shrink-0 ">
-                    <div class="bg-[rgb(24,23,23)] pl-10 pr-10 pb-10 text-center">
-                        <h5 class="font-semibold text-xl mt-5">Experience</h5>
-                        <h4 class="font-extrabold text-4xl mt-4">+ 0</h4>
-                    </div>
-                    <div class="bg-[rgb(24,23,23)] pl-10 pr-10 pb-10 text-center">
-                        <h5 class="font-semibold text-xl mt-5">Companies</h5>
-                        <h4 class="font-extrabold text-4xl mt-4">+ 0</h4>
-                    </div>
-                    <div class="bg-[rgb(24,23,23)] pl-10 pr-10 pb-10 text-center ">
-                        <h5 class="font-semibold text-xl mt-5">Projects</h5>
-                        <h4 class="font-extrabold text-4xl mt-4">+ 0</h4>
-                    </div>
+            
+            
+            <div data-aos="fade-right" data-aos-delay="100" data-aos-duration="1000" class="mt-20 flex flex-row justify-center gap-2 font-roboto sm:flex-col xl:flex flex-shrink-0 sm:px-20">
+                <div class="bg-[rgb(24,23,23)] pl-10 pr-10 pb-10 text-center">
+                    <h5 class="font-semibold text-xl mt-5">Experience</h5>
+                    <h4 class="font-extrabold text-4xl mt-4">+ 0</h4>
                 </div>
-            </div>
-        </div>
-    </div>
+                <div class="bg-[rgb(24,23,23)] pl-10 pr-10 pb-10 text-center">
+                    <h5 class="font-semibold text-xl mt-5">Companies</h5>
+                    <h4 class="font-extrabold text-4xl mt-4">+ 0</h4>
+                </div>
+                <div class="bg-[rgb(24,23,23)] pl-10 pr-10 pb-10 text-center ">
+                    <h5 class="font-semibold text-xl mt-5">Projects</h5>
+                    <h4 class="font-extrabold text-4xl mt-4">+ 0</h4>
+                </div>
+            </div>  
  </section>
 
  <section class="pb-64 pt-52">
@@ -280,10 +259,10 @@
     <section class="py-6">
         <div class="text-center pt-20 mb-6">
           <h1 class="text-3xl font-bold font-rubik">My <span class="text-[rgb(0,173,181)]">Galleria</span></h1>
-          <p class="text-xl text-[#fefefe] font-semibold font-roboto mt-6 text-justify indent-14 leading-9 pl-20 pr-20 sm:pl-12 sm:pr-12">Welcome to my Masonry Galleria, where I showcase a collection of my creative projects—from graphic designs to photography. I use tools like Figma and Photoshop to bring my ideas to life. Explore my creations and be inspired.</p>
+          <p class="text-xl text-[#fefefe] font-semibold font-roboto mt-6 text-justify indent-14 leading-9 pl-20 pr-20 sm:pl-8 sm:pr-8 sm:indent-0 sm:text-center sm:text-base sm:leading-8">Welcome to my Masonry Galleria, where I showcase a collection of my creative projects—from graphic designs to photography. I use tools like Figma, Canva and Photoshop. Explore my creations and be inspired.</p>
         </div>
       
-        <div class="masonry-grid sm:px-10">
+        <div class="masonry-grid xl:px-12">
             <div class="masonry-item relative group">
               <img src="../templates/images/socialyt.png" alt="Socialyt" class="rounded-lg shadow-sm transform transition duration-300 group-hover:blur-sm">
               <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 flex items-center justify-center transition duration-300">
@@ -345,10 +324,10 @@
 
     <section id="contacts">
         <div class="pt-48 text-center">
-            <h1 class="responsive-heading-2 text-3xl sm:text-lg sm:pl-4 sm:pr-4 font-rubik">Connect with me to learn more about my work and <br> collaborate on exciting projects.</h1>
+            <h1 class="responsive-heading-2 text-3xl sm:text-lg sm:px-5 font-rubik">Connect with me to learn more about my work and <br> collaborate on exciting projects.</h1>
         </div>
         <div class="mt-12 flex gap-2 justify-center items-center">
-            <div class="bg-[rgb(0,173,181)] h-[30rem] w-[40rem] flex justify-center items-center sm:hidden">
+            <div class="bg-[rgb(0,173,181)] h-[30rem] w-[40rem] flex justify-center items-center md:hidden">
                 <img data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="500" class="h-[25rem]" src="../templates/images/3dboy.png" alt="">
             </div>
             <div class="bg-amber-500 h-[30rem] w-[40rem] grid justify-center items-center">
