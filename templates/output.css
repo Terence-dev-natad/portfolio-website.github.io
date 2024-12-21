@@ -1422,6 +1422,26 @@ video {
   background-color: rgb(202 138 4 / var(--tw-bg-opacity));
 }
 
+.hover\:bg-\[rgb\(22\2c 29\2c 45\)\]:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(22 29 45 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-\[rgb\(255\2c 193\2c 7\)\]:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 193 7 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-\[rgb\(21\2c 114\2c 182\)\]:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(21 114 182 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-\[rgb\(255\2c 75\2c 0\)\]:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 75 0 / var(--tw-bg-opacity));
+}
+
 .hover\:text-\[rgb\(0\2c 173\2c 181\)\]:hover {
   --tw-text-opacity: 1;
   color: rgb(0 173 181 / var(--tw-text-opacity));
