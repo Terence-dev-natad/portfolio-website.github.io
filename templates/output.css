@@ -1185,6 +1185,10 @@ video {
   line-height: 2.25rem;
 }
 
+.tracking-widest {
+  letter-spacing: 0.1em;
+}
+
 .text-\[\#fefefe\] {
   --tw-text-opacity: 1;
   color: rgb(254 254 254 / var(--tw-text-opacity));
@@ -1722,5 +1726,25 @@ video {
 
   .sm\:leading-8 {
     line-height: 2rem;
+  }
+
+  .sm\:tracking-tight {
+    letter-spacing: -0.025em;
+  }
+
+  .sm\:tracking-tighter {
+    letter-spacing: -0.05em;
+  }
+
+  .sm\:-tracking-widest {
+    letter-spacing: -0.1em;
+  }
+
+  .sm\:tracking-widest {
+    letter-spacing: 0.1em;
+  }
+
+  .sm\:tracking-wider {
+    letter-spacing: 0.05em;
   }
 }
